@@ -49,6 +49,5 @@ public class MyFirstScript : MonoBehaviour
         kerulet= 2 * radius * Mathf.PI;
         terulet= radius * radius * 3.14f;
 
-        int asd;
-    }
+     }
 }
