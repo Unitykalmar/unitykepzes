@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -408,6 +408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907279325}
   - component: {fileID: 1907279324}
+  - component: {fileID: 1907279326}
   m_Layer: 0
   m_Name: HelloWolrd
   m_TagString: Untagged
@@ -427,10 +428,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092607b532367ef4f9426e1a3c3d71df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intInput: 0
-  floatInput: 2.91
-  stringInput: asdfevev
-  boolInput: 0
+  floatInput1: 10
+  floatInput2: 5
+  summa: 15
+  kulonbseg: 5
+  szorzat: 50
+  hanyad: 2
+  modulo: 0
+  a: 1
+  b: 2
+  c: 3
+  atlag: 2
+  radius: -0.98
+  kerulet: -6.1575217
+  terulet: 3.0156562
 --- !u!4 &1907279325
 Transform:
   m_ObjectHideFlags: 0
@@ -446,3 +457,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907279326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907279323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931dc7a20bef9f346b0ed5efa2fa4063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: 71
+  milyen: Paratlan!

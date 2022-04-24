@@ -3,7 +3,7 @@ using UnityEngine;
 public class ControlStructures : MonoBehaviour
 {
     [SerializeField] int a;
-    [SerializeField] string milyen;
+    [SerializeField] private string milyen;
 
 
     void Start()
