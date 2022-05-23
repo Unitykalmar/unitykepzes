@@ -3,8 +3,10 @@ using UnityEngine;
 public class Avatar : MonoBehaviour
 {
 
-    [SerializeField] float speed = 1;
-    [SerializeField] float angularSpeed = 360;
+    [SerializeField] float speed;
+    [SerializeField] float maxspeed;
+    [SerializeField] float accelerate;
+    [SerializeField] float angularSpeed;
     private void Update()
     {
         bool right = Input.GetKey(KeyCode.D);
@@ -17,6 +19,16 @@ public class Avatar : MonoBehaviour
 
         Vector3 movement = new Vector3(xMovement, 0, zMovement);
         movement.Normalize();
+
+        if (speed < maxspeed && (right || left || up || down))
+        {
+            speed += accelerate;
+        }
+        else if(speed > 0)
+        {
+            speed -= 1;
+        }
+
         movement *= speed;
         movement *= Time.deltaTime;
 
