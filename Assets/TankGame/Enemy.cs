@@ -4,9 +4,8 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] AnimationCurve speedOverDistance;
-
-
-    private void Update()
+    
+   private void Update()
     {
         Vector3 targetPos = target.position;
         Vector3 enemyPos = transform.position;
