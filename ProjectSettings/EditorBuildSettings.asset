@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/TankGame/MenuScene.unity
     guid: cbe9c12b859f75143b00ff154394d3b8
   - enabled: 1
-    path: Assets/TankGame/TankScene.unity
+    path: Assets/TankGame/TankSceneOnePlayer.unity
+    guid: 731af2d06f4333743904874bd1ecf5e7
+  - enabled: 1
+    path: Assets/TankGame/TankSceneTwoPlayer.unity
     guid: 1a9e46f62caab6a4f8aca5e404e195bb
   m_configObjects: {}

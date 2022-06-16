@@ -181,9 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'OPTION
-
-'
+  m_text: 2 Player
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -562,7 +560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 740638839}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1712515946}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &740638839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +691,7 @@ GameObject:
   - component: {fileID: 822740270}
   - component: {fileID: 822740269}
   m_Layer: 5
-  m_Name: OptionButton
+  m_Name: TwoPlayerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -751,7 +761,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 822740270}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1712515946}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: TwoPlayerGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &822740270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,8 +847,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: 1.5552979}
-  m_SizeDelta: {x: 245.297, y: 87.8125}
+  m_AnchoredPosition: {x: -0.75751, y: -33.5}
+  m_SizeDelta: {x: 290.0251, y: 17.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &910412805
 MonoBehaviour:
@@ -848,7 +870,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PLAY
+  m_text: '1 Player
+
 
 '
   m_isRightToLeft: 0
@@ -913,7 +936,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.16113281, y: 0.6039734, z: -2.6018066, w: -0.63409424}
+  m_margin: {x: -0.16113281, y: 0.6039734, z: -6.5776367, w: -0.63409424}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1068,7 +1091,7 @@ GameObject:
   - component: {fileID: 1847353062}
   - component: {fileID: 1847353061}
   m_Layer: 5
-  m_Name: PlayButton
+  m_Name: OnePlayerButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1093,7 +1116,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000012398, y: 115.6283}
-  m_SizeDelta: {x: 236.9005, y: 76.3323}
+  m_SizeDelta: {x: 288.51, y: 76.3323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847353061
 MonoBehaviour:
@@ -1141,7 +1164,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1712515946}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: OnePlayerGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

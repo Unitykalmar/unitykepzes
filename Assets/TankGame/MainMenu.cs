@@ -5,8 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void OnePlayerGame()
     {
-        SceneManager.LoadScene("TankScene");
+        SceneManager.LoadScene("TankSceneOnePlayer");
+    }
+
+    public void TwoPlayerGame()
+    {
+        SceneManager.LoadScene("TankSceneTwoPlayer");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
