@@ -9,7 +9,7 @@ public class Avatar2 : MonoBehaviour
     [SerializeField] float accelerate;
     [SerializeField] float angularSpeed;
     [SerializeField] Damageable damageable;
-    [SerializeField] Space mocementSpace = Space.World;
+    [SerializeField] Space movementSpace = Space.World;
 
     [SerializeField] GameObject projectilePrototype;
 

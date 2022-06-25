@@ -6,6 +6,7 @@ public class Damageable : MonoBehaviour
     public int health = 100;
     [SerializeField] TMP_Text healthText;
     [SerializeField] GameObject gameOverScreen;
+    [SerializeField] GameObject avatar;
 
     int startHealth;
 
@@ -28,7 +29,8 @@ public class Damageable : MonoBehaviour
         UpdateText();
 
         if (health <= 0)
-            gameOverScreen.SetActive(true);
+            Destroy(avatar);
+          //  gameOverScreen.SetActive(true);
     }
 
     void UpdateText()
@@ -39,7 +41,7 @@ public class Damageable : MonoBehaviour
 
     public void RestartDamageable()
     {
-        gameOverScreen.SetActive(false);
+        //gameOverScreen.SetActive(false);
         health = startHealth;
         UpdateText();
     }

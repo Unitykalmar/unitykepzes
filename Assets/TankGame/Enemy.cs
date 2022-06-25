@@ -5,12 +5,14 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform target1;
     [SerializeField] Transform target2;
     [SerializeField] AnimationCurve speedOverDistance;
+    Vector3 targetPos;
 
-   private void Update()
+    private void Update()
     {
-        Vector3 targetPos;
+        Vector3 enemyPos = transform.position;
 
-        if (target2 != null) {
+        if (target2 != null)
+        {
             if ((target1.position - transform.position).magnitude < (target2.position - transform.position).magnitude)
             {
                 targetPos = target1.position;
@@ -18,11 +20,11 @@ public class Enemy : MonoBehaviour
             else
                 targetPos = target2.position;
         }
-        else
+        else if (target1 != null)
             targetPos = target1.position;
+        else
+            targetPos = enemyPos;
 
-
-        Vector3 enemyPos = transform.position;
         Vector3 movement = targetPos - enemyPos;
 
         float distance = movement.magnitude;
